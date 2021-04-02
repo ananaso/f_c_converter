@@ -48,9 +48,9 @@ fn main() {
 
     if temp_unit == "F" {
         let converted_value = f_to_c(temp_value);
-        println!("{}F = {}C", temp_value, converted_value);
+        println!("{:.2}F = {:.2}C", temp_value, converted_value);
     } else {
         let converted_value = c_to_f(temp_value);
-        println!("{}C = {}F", temp_value, converted_value);
+        println!("{:.2}C = {:.2}F", temp_value, converted_value);
     }
 }
