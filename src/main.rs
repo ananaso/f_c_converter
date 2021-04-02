@@ -45,7 +45,6 @@ fn main() {
     let temp_value: f32 = temp_value.trim().parse()
         .expect("Uhhh, how'd this become NaN?");
     let temp_unit = temp_unit.trim().to_uppercase();
-    println!("{}{}", temp_value, temp_unit);
 
     if temp_unit == "F" {
         let converted_value = f_to_c(temp_value);
