@@ -46,4 +46,12 @@ fn main() {
         .expect("Uhhh, how'd this become NaN?");
     let temp_unit = temp_unit.trim().to_uppercase();
     println!("{}{}", temp_value, temp_unit);
+
+    if temp_unit == "F" {
+        let converted_value = f_to_c(temp_value);
+        println!("{}F = {}C", temp_value, converted_value);
+    } else {
+        let converted_value = c_to_f(temp_value);
+        println!("{}C = {}F", temp_value, converted_value);
+    }
 }
